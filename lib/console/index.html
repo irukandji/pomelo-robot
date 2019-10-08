@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="css/colors.css" />
 <script src="/js/lib/jquery.min.js"></script>
 <script src="/js/lib/socket.io.js"></script>
-<script src="/js/lib/underscore.min.js"></script>
+<script src="/js/lib/underscore-min.js"></script>
 <script src="/js/nodeclient.js"></script>
 <script src="/js/webclient.js"></script>
 <script src="/js/lib/scrollTo.jquery.js"></script>
@@ -52,7 +52,7 @@
 						<div style="float: left; width: 100%;">
 							<div  style="float: left"> &nbsp;Run&nbsp;Script：</div>
 							<div style="width: 90%;">
-								<textarea style="width: 380px;" value='' id="robotinput" /></textarea>
+								<textarea style="width: 380px;" value='' id="robotinput" />app/script/case00-lobby-inout.js</textarea>
 								<input type="button" class="add-button" style="float: none"
 									id="ready-button" style="" value='Ready?'>&nbsp;&nbsp;<input type="button" class="add-button" id="run-button"  style="float:none;display:none" value='Go'>
 								<span style="width:180px;margin:0px 0px 45px 15px;" id='hitdiv'></span>
@@ -92,8 +92,10 @@
 							<td>Max</td>
 							<td>Min</td>
 							<td>Avg</td>
+                            <td>Raw</td>
 							<td>Qps</td>
-							<td>Count</td>
+                            <td>Tps</td>
+                            <td>Count</td>
 							</tr>
 		 				</thead>
 						<tbody id='reportSummary'>
@@ -143,8 +145,10 @@
 							<td>Max</td>
 							<td>Min</td>
 							<td>Avg</td>
+                            <td>Raw</td>
 							<td>Qps</td>
-							<td>Count</td>
+                            <td>Tps</td>
+                            <td>Count</td>
 							</tr>
 		 				</thead>
 						<tbody class='summary'>
